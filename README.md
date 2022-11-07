@@ -13,7 +13,10 @@
 > 可參考以下連結說明。  
 > ***.csv*** 可從疾病管制署資料開放平台獲得後修改
 
-- YouTube：https://www.youtube.com/watch?v=nMV0KZgTmwY
+- YouTube：...
+    - [使用 Python 分析公費 COVID-19 家用快篩試劑社區定點診所名單 講解片段（程式執行片段）](https://youtu.be/skPNc-oBZnw)
+    - [使用 Python 分析公費 COVID-19 家用快篩試劑社區定點診所名單 講解片段（原理、初衷片段）](https://youtu.be/SmO1cgbHelw)
+  
 - Paper：Nope
 
 ## 配置要求 *Configuration Requirements*
