@@ -1,7 +1,7 @@
 # COVID-19 clinic rapid screening reagent distribution in Taiwan
 
-    使用 Python 分析台灣 COVID-19 診所快速篩查試劑分佈
-    Using Python to analysis COVID-19 clinic rapid screening reagent distribution in TW
+    使用 Python 分析公費 COVID-19 家用快篩試劑社區定點診所名單
+    Using Python to analyze the list of community-based clinics for public-funded COVID-19 home rapid screening reagents
     
 > 對 ***配合辦理發放公費COVID-19家用快篩試劑社區定點診所名單.csv*** 文件做資料分析    
 > Do data analysis on document ***配合辦理發放公費COVID-19家用快篩試劑社區定點診所名單.csv***  
