@@ -1,11 +1,3 @@
-# Clinic_Distribution_Analysis.py
-
-"""
-
-"""
-"""
-
-"""
 """
 
 """
@@ -127,14 +119,14 @@ def mode_choose():
 
         else:
             print("Error Input!")
-            return -1;
+            return -1
 
     elif choose1 == 3:
-        return 3;
+        return 3
 
     else:
         print("Error Input!")
-        return -1;
+        return -1
 
     
 def Inquire(switch):
@@ -159,15 +151,18 @@ def Inquire(switch):
                 print("(8) nothing more to say")
             times += 1
 
-        print("* : Pls enter Complete Words!")
+        print("* : Pls enter complete words!")
 
         kind = input("What kind detail would you want to input ? ")
         detail = input(f"Which {kind} ? ")
 
-        condition = pd.DataFrame()
-        condition = csv_file[kind].str.contains(detail)
+        try:
+            condition = pd.DataFrame()
+            condition = csv_file[kind].str.contains(detail)
+        except:
+            print("Error Input!")
 
-        print(f"Searching Results : {csv_file[condition]}")
+        print(f"\nSearching Results : \n\n{csv_file[condition]}\n")
 
     else:
         kind = 0
@@ -179,28 +174,30 @@ def Inquire(switch):
                     print("(8) nothing more to say")
                 times += 1
 
+            print("* : Pls enter number!")
+
             kind = int(input("What kind detail would you want to input ? "))
-            
+
             if kind == 1:
-                detail = input("Which city ? ")
+                detail = input("Which City ? ")
                 Keyword["City"] = detail
             elif kind == 2:
-                detail = input("Which town ? ")
+                detail = input("Which Town ? ")
                 Keyword["Town"] = detail
             elif kind == 3:
-                detail = input("Which name ? ")
+                detail = input("Which Name ? ")
                 Keyword["Name"] = detail
             elif kind == 4:
-                detail = input("Which address ? ")
+                detail = input("Which Address ? ")
                 Keyword["Address"] = detail
             elif kind == 5:
-                detail = input("Which phone ? ")
+                detail = input("Which Phone ? ")
                 Keyword["Phone"] = detail
             elif kind == 6:
-                detail = input("Which long ? ")
+                detail = input("Which Long ? ")
                 Keyword["Long"] = detail
             elif kind == 7:
-                detail = input("Which lat ? ")
+                detail = input("Which Lat ? ")
                 Keyword["Lat"] = detail
 
     """
@@ -222,9 +219,10 @@ def Inquire(switch):
                 del(condition2)
                 del(condition3)
 
-    print(f"Searching Results : {csv_file[condition1]}")
+    if switch != 1:
+        print(f"\nSearching Results : \n\n{csv_file[condition1]}\n")
 
-    return 0;
+    return 0
 
 
 def Statistics():
@@ -278,6 +276,7 @@ def Statistics():
 
     chart = sns.barplot(x = "Town", y = "Clinic Count", data = statistics)
     chart.set_title("中華民國縣市診所數量分布")
+    print("Show plt")
     plt.show()
 
 def main():
@@ -290,9 +289,9 @@ def main():
         if choose == 3:
             break
     
-    print("Program End...")
+    print("Program End")
     
-    return 0;
+    return 0
 
 
 main()
