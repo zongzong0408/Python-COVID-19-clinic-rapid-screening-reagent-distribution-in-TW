@@ -27,5 +27,6 @@
 > `2022/5/10`：  
 > ***配合辦理發放公費COVID-19家用快篩試劑社區定點診所名單.csv***  
 > 來源：*https://data.cdc.gov.tw/dataset/covid19_free_rapid_antigen_test_clinics*  
+> 個人修改 ***.csv***：https://drive.google.com/file/d/1CC22Vn0OIMu78SobwC43XpopH9mOqBNf/view?usp=sharing
     
 > 若有其他問題可在 GitHub 發起 issues 或寄 Email 給我。
