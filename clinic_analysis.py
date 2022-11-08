@@ -1,5 +1,10 @@
 """
-
+    Author  : zong zong
+    Connect : zongozngchu0408@gmail.com
+    School  : 臺北市立中正高級中學
+    GitHub  : https://github.com/zongzong0408/Python-COVID-19-clinic-rapid-screening-reagent-distribution-in-TW
+    
+	Last edited : 2022/11/07/08:59PM
 """
 from matplotlib.font_manager import FontProperties
 import matplotlib.pyplot as plt         # invoke picture
